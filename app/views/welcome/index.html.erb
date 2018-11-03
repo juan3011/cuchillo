@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		*, html{
+			margin: 0px 0px;
+		}
+		.container{
+			width: 100%;
+			max-width: 1000px;
+			margin: 0 auto;
+            position: relative;
+            background: #123;
+            color: #fff;
+            padding:10px;
+		}
+		nav{
+			background: #000;
+			color: #fff;
+			padding:0px;
+		}
+		.col-6{
+			width: 39%;
+			display: inline-block;
+		}
+		.logo img{
+			width: 180px;
+        }
+        .logo2 img{
+			width: 1000px;
+		}
+		.menu{
+			text-align: left;
+			display: block;
+		}
+		.menu li{
+			float: right;
+			margin: 20px 10px 10px 5px;
+			list-style: none;
+		}
+		.menu li:first-child{
+			border-left: 1px solid #fff;
+		}
+
+		.overlay{
+			background: #007;
+			height: 80%;
+			width: 80%;
+			position: relativo;
+            opacity: 1;
+            color: #fff;
+		}
+	</style>
+</head>
+<body background="http://www.wradio.com.co/images/1938814_n_vir1.JPG">
+	<header>
+		<nav>
+				<div class="col-6 logo"><img src="https://eradio.com.co/wp-content/uploads/2018/08/Bogot%C3%A1-696x439.jpg"></div>
+				<span style="font-size: 48px;">HOLE-WIRE</span>
+				<div class="col-6">
+					<ul class="menu">
+						<li>&nbsp&nbsp&nbsp&nbsp&nbspLogin</li>
+						<li><%= link_to 'Nuevo usuario', new_usuario_path %></li>
+					</ul>
+				</div>
+		
+        </nav>
+
+
+        <div class="container">
+            <center>
+            <h1>Reportes de huecos y cableado de Bogotá</h1>
+            <p>Mirar los reportes y los usuarios que envian sus reportes</p>
+            <br>
+            <%= link_to "Usuarios y reportes", usuarios_path %>
+            </center>
+     
+            <div class="col-6 logo2"><img src="https://static.iris.net.co/semana/upload/images/2016/1/30/458683_1.jpg"></div>
+        
+        </div>
+
+
+	</header>
+
+</body>
+</html>
+
+
+
+
